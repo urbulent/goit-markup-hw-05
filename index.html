@@ -22,13 +22,13 @@
     <a href="./index.html" class="logos logo links"><span class="logos-color">Web</span>Studio</a> 
       <ul class="menu list">
         <li class="header-item">
-          <a href="./index.html" class="link-item menu-link link">Studio</a>
+          <a href="./index.html" class="link-item menu-link link current">Studio</a>
         </li>
         <li class="header-item">
           <a href="./portfolio.html" class="link-item menu-link link">Portfolio</a>
         </li>
         <li class="header-item">
-          <a href="./portfolio.html" class="link-item menu-link link">Contacts</a>
+          <a href="/" class="link-item menu-link link">Contacts</a>
         </li>
       </ul>
   </nav>
@@ -47,7 +47,7 @@
     <section class="hero">
       <div class="container">
       <h1 class="main-title">Effective Solutions for Your Business</h1>
-      <button type="button" class="order-btn btn">Order Service</button>
+      <button type="button" data-modal-open class="order-btn btn">Order Service</button>
       </div>
     </section>
     <!--секція 2-->
@@ -358,6 +358,16 @@
 </div>
 </div>
 </footer>
+<!-- ========== Modal Window ========= -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+<svg class="modal-close-button-icon" width="8" height="8">
+    <use href="./images/icons.svg#icon-close-modal-icon"></use>
+</svg>
+</button></div>
+</div> 
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
